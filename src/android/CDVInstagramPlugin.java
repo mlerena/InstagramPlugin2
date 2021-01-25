@@ -137,9 +137,9 @@ public class CDVInstagramPlugin extends CordovaPlugin {
 
                 shareIntent.putExtra(Intent.EXTRA_STREAM, photoURI);
                 shareIntent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                shareIntent.putExtra("com.instagram.sharedSticker.contentURL", "brisamusic://");
-            }
 
+            }
+            shareIntent.putExtra("com.instagram.sharedSticker.contentURL", "brisamusic://");
             shareIntent.putExtra(Intent.EXTRA_TEXT, captionString);
             shareIntent.setPackage("com.instagram.android");
 
